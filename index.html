@@ -6,49 +6,83 @@
 	<link rel="stylesheet" type="text/css" href="resources/css/style.css">
 </head>
 <body>
-	<div id="landing">
-    <header>
-    	<img src="resources/images/logo.png">
-    	<span>Secret Agent Supply Inc.</span>
-    </header>
-    <figure class="info-box">
-      <span>New Arrival</span>
-      <h1>Sports Bikes and Motorcycles</h1>
-    </figure>
-    <nav>
-    	<p>Menu</p>
-    	<span>Eyewear</span>
-    	<span>Apparel</span>
-    	<span>Gadgets</span>
-    	<span>Vehicles</span>
-    	<span>Classes</span>
-    	<span>Contact</span>
-    </nav>
+  <header>
+   	<div class="x-container">
+   	  <img src="resources/images/logo.png">
+   	  <p>SECRET AGENT SUPPLY INC.</p>
+    </div>
+  </header>
+
+  <div class="landing-box">
+  	<div class="x-container">
+  		<div class="info-box">
+        <figure>
+          <p>NEW ARRIVAL</p>
+          <h1>SPORT BIKES AND MOTORCYCLES</h1>
+        </figure>
+      </div>
+    </div>
   </div>
+  <nav>
+  	<div class="x-container">
+    	<a class="menu">Menu</a>
+    	<a class="item" href="#glasses">Eyewear</a>
+    	<a class="item" href="#watch">Apparel</a>
+    	<a class="item" href="#pen">Gadgets</a>
+    	<a class="ducati" href="#ducati">Vehicles</a>
+    	<a class="item dojo" href="#dojo">Classes</a>
+    	<a class="item contact" href="#contact">Contact</a>
+    </div>
+  </nav>
+
   <main>
-  	<figure>
-  		<img src="resources/images/pen.png">
-  		<figcaption>Exploding Pen</figcaption>
-  	</figure>
-  	<figure>
-  		<img src="resources/images/watch.png">
-  		<figcaption>Cellular Watch</figcaption>
-  	</figure>
-  	<figure>
-  		<img src="resources/images/glasses.png">
-  		<figcaption>Thermal Glasses</figcaption>
-  	</figure>
-  	<div class="info-main">
-  		<header>Location</header>
-  		<span>-47.346436, 84.32354</span>
-  	</div>
-  	<div class="info-main">
-  		<header>Hours</header>
-  		<span>0800 - 1800</span>
-  	</div>
+  	<section class="product">
+    	<div class="x-container">
+      	<figure id="pen">
+      		<img src="resources/images/pen.png">
+      		<figcaption>Exploding Pen</figcaption>
+      	</figure>
+      	<figure id="watch">
+      		<img src="resources/images/watch.png">
+      		<figcaption>Cellular Watch</figcaption>
+      	</figure>
+      	<figure id="glasses">
+      		<img src="resources/images/glasses.png">
+      		<figcaption>Thermal Glasses</figcaption>
+      	</figure>
+      	<figure id="ducati" class="secret">
+      		<img src="resources/images/ducati.jpg">
+      		<figcaption>Ducati</figcaption>
+      	</figure>
+      	<figure id="dojo" class="secret">
+      		<img src="resources/images/dojo.jpg">
+      		<figcaption>Classes</figcaption>
+      	</figure>
+      	<figure id="contact" class="secret">
+      		<img src="resources/images/contact.png">
+      		<figcaption>Info</figcaption>
+      	</figure>
+      </div>
+    </section>
+
+    <section class="business-info">
+      <div class="x-container">
+        <figure>
+      		<figcaption>Location</figcaption>
+      		<span>-47.346436, 84.32354</span>
+        </figure>
+        <figure>    
+      		<figcaption>Hours</figcaption>
+      		<span>0800 - 1800</span>
+      	</figure>
+      </div>
+    </section>
   </main>
+
   <footer>
-  	Copyright Secret Agent Supply Inc.
+  	<div class="x-container">
+  		<p>Copyright Secret Agent Supply Inc.</p>
+  	</div>
   </footer>
 </body>
 </html>

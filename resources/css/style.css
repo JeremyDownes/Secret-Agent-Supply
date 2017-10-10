@@ -1,0 +1,189 @@
+html {
+	font-size: 18px;\
+}
+
+body {
+overflow-x: hidden;
+}
+
+.x-container {
+	width: 960px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;	
+}
+
+header {
+	width: 100%
+	height: auto;
+	background-color: black;
+}
+
+header p {
+	align-self: center;
+	color: white;
+	margin: 0.66rem 0.5rem;
+}
+
+header img {
+	height: 1.5rem;
+	margin: 0 0.5rem;
+}
+
+.landing-box {
+	background: url("../images/moto.jpeg") no-repeat;
+	background-size: 100%;
+	height: 25rem;
+	width: 100%;
+	display: flex;
+}
+
+.info-box {
+	margin-top: 9rem;
+	width: 25rem;
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	font-family: Helvetica;
+}
+
+.info-box figure{
+  padding: 2rem 3rem;
+}
+
+figure h1 {
+	font-size: 2rem;
+	margin-top: 0.25rem;
+}
+
+nav {
+	background-color: firebrick;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+nav .x-container {
+	justify-content: space-between;
+	padding: 0.75rem 0;
+}
+
+.menu {
+	display: none;
+}
+
+main .x-container{
+	display: flex;
+	justify-content: space-between;
+}
+
+main figure {
+	display: flex; 
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 3rem 0;
+	height: 14.5rem;
+	width: 30%;
+	border: 4px solid black;
+}
+
+main img {
+	margin: auto;
+	max-height: 9rem;
+	max-width: 9rem;
+}
+
+#dojo img {
+	min-width: 100%;
+	height: auto;
+}
+
+.secret {
+  
+  
+}
+
+/*.item ~  * {
+	border: 2px solid green;
+}*/
+
+figcaption {
+	padding: 0.5rem 0;
+	color: white;
+	background-color: black;
+	text-align: center;
+}
+
+.business-info figure {
+	margin: 0 0 4rem 0;
+	width: 35%;
+	height: auto;
+}
+
+.business-info figcaption {
+	padding: 1rem 2rem;
+	text-align: left;
+}
+
+footer {
+	height: 5rem;
+	color: white;
+	background-color: black;
+}
+
+footer .x-container {
+	height: 100%;
+	align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+   
+  .x-container {
+  	width: 100%;
+  	flex-wrap: nowrap;
+  }
+
+  .product figure {
+  	width: 47%;
+  	flex-shrink: 1;
+  }
+
+  .business-info figure {
+  	width: 35%;
+  	flex-shrink: 0.2;
+  }
+
+  nav .x-container {
+  	flex-direction: column;
+   }
+
+  a {
+  	width: 100%;
+  	text-align: center;
+  }
+
+  .menu {
+  	display: initial;
+  	margin: auto;
+  }
+
+  .item {
+  	display: none;
+  }
+
+  nav:hover .item {
+  	display: inline;
+  } 
+  
+  #glasses {
+  	position: absolute;
+  	margin-left: 100%;
+  }
+  
+  nav > *:active {
+  
+  }
+}
