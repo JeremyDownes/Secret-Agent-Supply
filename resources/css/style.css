@@ -66,6 +66,10 @@ a {
 	color: white;
 }
 
+a:hover {
+	cursor: pointer;
+}
+
 nav .x-container {
 	width: 960px;
 	margin: 0 auto;
@@ -174,8 +178,18 @@ footer .x-container {
   }
 
   nav:hover .item {
+  	width: 15%;
+  	background-color: black;
   	display: inline;
+  	margin-bottom: 1rem;
+  	border: 1px solid black;
+  	border-radius: 30% 30%;
+  	padding: 0.25rem 0;
   }   
+
+  nav:hover .menu {
+  	display: none;
+  }
 }
 
 @media only screen and (max-width: 470px) {
@@ -216,7 +230,12 @@ footer .x-container {
 
   nav:hover .item {
   	display: inline;
+  	margin-bottom: 1rem;
   }   
+
+  nav:hover .menu {
+  	display: none;
+  }
 
   .product .x-container {
   	justify-content: space-around;
