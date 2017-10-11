@@ -4,6 +4,68 @@
 	<title>Secret Agent Supply Inc.</title>
 	<link rel="stylesheet" type="text/css" href="resources/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+  <script>
+      $(document).ready(function() {
+        $(".secret").hide();
+
+        $(window).resize(function(){
+          location.reload();
+        });
+
+        if ($("div.x-container").width() < 960 ) {
+          $("#glasses").hide().addClass("secret");
+        }
+
+        if ($("div.x-container").width() < 470 ) {
+          $("#watch").hide().addClass("secret");
+        }
+
+        $(".ducati").click(function() {
+          if ($("#ducati").hasClass("secret")) {
+            $(".product .x-container figure").not(".secret").first().hide().addClass("secret");
+            $("#ducati").show().removeClass("secret");
+          }
+        });
+
+        $(".glasses").click(function() {
+          if ($("#glasses").hasClass("secret")) {
+            $(".product .x-container figure").not(".secret").first().hide().addClass("secret");
+            $("#glasses").show().removeClass("secret");
+          }
+        });
+
+        $(".watch").click(function() {
+          if ($("#watch").hasClass("secret")) {          
+            $(".product .x-container figure").not(".secret").first().hide().addClass("secret");
+            $("#watch").show().removeClass("secret");
+          }
+        });
+
+        $(".pen").click(function() {
+          if ($("#pen").hasClass("secret")) {          
+            $(".product .x-container figure").not(".secret").first().hide().addClass("secret");
+            $("#pen").show().removeClass("secret");
+          }
+        });
+
+        $(".dojo").click(function(){
+          if ($("#dojo").hasClass("secret")) {          
+            $(".product .x-container figure").not(".secret").first().hide().addClass("secret");
+            $("#dojo").show().removeClass("secret");
+          }
+        });
+
+        $(".contact").click(function() {
+          if ($("#contact").hasClass("secret")) {
+            $(".product .x-container figure").not(".secret").first().hide().addClass("secret");
+            $("#contact").show().removeClass("secret");
+          }
+        });
+      });
+  </script>
+
 </head>
 <body>
   <header>
@@ -23,15 +85,17 @@
       </div>
     </div>
   </div>
+
+
   <nav>
   	<div class="x-container">
     	<a class="menu">Menu</a>
-    	<a class="item" href="#glasses">Eyewear</a>
-    	<a class="item" href="#watch">Apparel</a>
-    	<a class="item" href="#pen">Gadgets</a>
-    	<a class="ducati" href="#ducati">Vehicles</a>
-    	<a class="item dojo" href="#dojo">Classes</a>
-    	<a class="item contact" href="#contact">Contact</a>
+    	<a class="item glasses">Eyewear</a>
+    	<a class="item watch">Apparel</a>
+    	<a class="item pen">Gadgets</a>
+    	<a class="item ducati">Vehicles</a>
+    	<a class="item dojo">Classes</a>
+    	<a class="item contact">Contact</a>
     </div>
   </nav>
 
@@ -60,7 +124,7 @@
       	</figure>
       	<figure id="contact" class="secret">
       		<img src="resources/images/contact.png">
-      		<figcaption>Info</figcaption>
+      		<figcaption>Mission Breifing</figcaption>
       	</figure>
       </div>
     </section>
@@ -84,5 +148,6 @@
   		<p>Copyright Secret Agent Supply Inc.</p>
   	</div>
   </footer>
+
 </body>
 </html>

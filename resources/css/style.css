@@ -52,7 +52,7 @@ header img {
   padding: 2rem 3rem;
 }
 
-figure h1 {
+.info-box h1 {
 	font-size: 2rem;
 	margin-top: 0.25rem;
 }
@@ -67,6 +67,11 @@ a {
 }
 
 nav .x-container {
+	width: 960px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;	
 	justify-content: space-between;
 	padding: 0.75rem 0;
 }
@@ -75,12 +80,12 @@ nav .x-container {
 	display: none;
 }
 
-main .x-container{
+.product .x-container, .business-info .x-container{
 	display: flex;
 	justify-content: space-between;
 }
 
-main figure {
+.product figure {
 	display: flex; 
 	flex-direction: column;
 	justify-content: space-between;
@@ -90,7 +95,8 @@ main figure {
 	border: 4px solid black;
 }
 
-main img {
+
+.product img {
 	margin: auto;
 	max-height: 9rem;
 	max-width: 9rem;
@@ -100,15 +106,6 @@ main img {
 	min-width: 100%;
 	height: auto;
 }
-
-.secret {
-  
-  
-}
-
-/*.item ~  * {
-	border: 2px solid green;
-}*/
 
 figcaption {
 	padding: 0.5rem 0;
@@ -157,7 +154,9 @@ footer .x-container {
   }
 
   nav .x-container {
+  	width: 100%;
   	flex-direction: column;
+  	align-items: center;
    }
 
   a {
@@ -176,14 +175,80 @@ footer .x-container {
 
   nav:hover .item {
   	display: inline;
-  } 
-  
-  #glasses {
-  	position: absolute;
-  	margin-left: 100%;
+  }   
+}
+
+@media only screen and (max-width: 470px) {
+   
+	.landing-box {
+		height: 15rem;
+	}
+
+	.info-box {
+		width: 100%
+		margin-top: 10rem;
+		font-size: 0.77rem;
+	}
+
+  .info-box figure{
+    padding: 1rem 2rem;
+  }	
+
+  .info-box h1 {
+  	font-size: 1rem;
+  	margin-top: 0.25rem;
   }
-  
-  nav > *:active {
-  
+
+  nav .x-container {
+  	width: 100%;
+  	flex-direction: column;
+  	align-items: center;
+   }
+
+  .menu {
+  	display: initial;
+  	margin: auto;
   }
+
+  .item {
+  	display: none;
+  }
+
+  nav:hover .item {
+  	display: inline;
+  }   
+
+  .product .x-container {
+  	justify-content: space-around;
+  	width: 100%;
+  }
+
+  .product figure {
+  	width: 90%;
+  	flex-shrink: 1;
+  }
+
+  .business-info .x-container{
+  	width: 100%;
+  	flex-direction: column;
+  	align-items: center;
+  }
+
+  .business-info .x-container > *{
+  	width: 90%;
+  }
+
+  .business-info figure {
+  	margin-bottom: .5rem;
+  }
+
+  footer {
+  	margin-top: 3.5rem;
+  }
+
+  footer p {
+  	width: 100%;
+  	text-align: center;
+  }
+
 }
